@@ -1,0 +1,908 @@
+
+:root {
+  --bgcolor: #F58634; 
+}
+
+
+@font-face {
+    font-family: 'futura';
+    src: url(fonts/FuturaBold.otf) format("truetype");
+}
+
+
+
+@font-face {
+    font-family: 'inter';
+    src: url(fonts/Inter-Regular.ttf) format("truetype");
+}
+
+
+body{
+	font-family:inter;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+	background-color:red;
+	width:100vw;
+	overflow-x:hidden;
+}
+
+.container{
+    max-width: 1180px;
+	
+}
+
+h1{
+	font-family: futura;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 53px;
+
+}
+
+	
+h2 {
+	font-family:futura;
+	font-size:36px;
+	font-weight:700;
+	line-height:48px;
+	
+}
+
+.clients p {
+	font-family:inter;
+	font-size:20px;
+	font-weight:400;
+}
+
+
+.intro-text{
+	font-family:inter;
+	font-size:20px;
+	font-weight:400;
+}
+
+
+#hero{
+	height:100%;
+	background-color:#F58634;
+}
+
+
+#hero h1{
+	font-size:54px;
+	font-weight:700;
+	line-height:60px;
+	color:#ffffff;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#hero p{
+font-family: futura;
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 43px;
+color: #000000;
+}
+
+
+#hero img{
+	height:620px;
+	object-fit:contain;
+}
+
+
+.why_us h1, .get_started h1{
+	font-family:futura;
+	font-size:48px;
+	
+}
+
+.why_us .w-75, .get_started .w-75{
+	font-family:inter;
+	font-size:16px;
+	line-height:19px;
+	
+}
+
+.nav-pills .nav-link.active{
+	background-color:#000000;
+}
+
+
+.tab-content h3{
+	font-family:futura;
+	font-size:32px;
+	line-height:100%;
+	text-align:left;
+
+}
+
+.tab-content p{
+	font-family:inter;
+	font-size:20px;
+	font-weight:bold;
+	line-height:24px;
+	text-align:left;
+}
+
+
+
+.why_us_tab nav .nav-link, nav ul li a{
+
+	font-size:18px;
+	font-weight:400;
+	color:#000000;
+}
+
+
+
+.why_us_tab ul .nav-link{
+	background-color:#F58634;
+	color: white;
+	}
+	
+.why_us_tab ul li .active {
+	background-color:#000000;
+}
+
+.why_us_tab ul li{
+	margin:0px 6px 0px 6px;
+
+}
+
+.tab_img {
+	/*background-image: url(../../images/training/training.jpg);*/
+	background-size:cover;
+	background-position: center;
+	background-repeat:no-repeat;
+
+}
+
+.tab_img img{
+	height:100%;
+	object-fit: cover;
+	object-position: right top;
+}
+
+.pulse{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: #F58634;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 40%;
+}
+
+.pulse a{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 18%;
+    z-index: 1;
+}
+
+.pulse::before,
+.pulse::after
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #F58634;
+    position: absolute;
+    border-radius: 50%;
+	
+    margin-left: -15%;
+     /* z-index: 1;  */
+}
+
+.pulse::before{
+    animation: puse 2s ease-in infinite;
+}
+
+.pulse::after{
+    animation: puse 2s ease-in-out infinite;
+}
+
+@keyframes puse{
+    100%{
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+ .videoplay img{
+    height: 30rem;
+    width: 40%;
+}  
+
+.tab-pane .start{
+	background-color:#D9D9D9;
+	
+}
+
+.steps{
+	background-color:#F58634;
+	color:#ffffff;
+}
+
+
+
+.get_started .steps h2{
+	font-family:futura;
+	font-size:34px;
+}
+
+.get_started .tr-steps {
+	font-family:futura;
+	font-size:14px;
+	text-align:center;
+	font-weight:bold;
+}
+
+.sl-icon1 {
+	position:absolute;
+	bottom:100vh;
+	margin-top:-20px;
+}
+
+
+.motivation h3{
+	font-family:futura;
+	font-size:36px;
+	font-weight:bold;
+}
+
+.motivation .more-info{
+	font-family:inter;
+	font-size:20px;
+	line-height:24px;
+	
+}
+
+.motivation h4{
+	font-family:futura;
+	font-size:22px;
+	
+}
+
+.motivation-points{
+	font-family:inter;
+	font-size:14px;
+	line-height:17px;
+	
+}
+
+.news .steps{
+	background-color:var(--bgcolor);
+}
+
+
+.news-thumb{
+	position:relative;
+	z-index:2000;
+	margin-left:-50px;
+	margin-top:-30px;	
+}
+
+
+.newsletter{
+	position:relative;
+	background-color:rgba(247, 150, 5, 0.52);
+	height:417px;
+}
+
+.newsletter img {
+	position:absolute;
+	top:20%;
+	right:10%;
+	
+
+}
+
+.inputs{position:relative;width:70%;height:50px}
+.inputs input{position:absolute;width:100%;height:100%; top:50;)}
+.inputs span{position:absolute;top:12px;right:15px;cursor:pointer;font-size:17px}
+.inputs input:focus{outline:none}
+
+
+/** blog page styling 
+=============================
+**/
+
+
+
+#header-banner {
+	height:15vh;
+	background-color:var(--bgcolor);
+}
+
+#header-banner .banner-title{
+	font-size:24px;
+	font-weight:700;
+}
+
+
+/** blog page styling ends 
+==============================**/
+
+
+/** services page styling **/
+
+
+.services .steps{
+	background-color: var(--bgcolor);
+	color:#ffffff;
+}
+
+.services .steps p{
+	font-family:inter;
+	font-size:14px;
+	font-weight:500;
+}
+
+
+
+/** services page styling ends **/
+
+
+/** courses **/
+  .course-search input{
+	  width:70%;
+  }
+/** courses **/
+
+/** products **/
+ .products-cta{
+	 background-color:var(--bgcolor);
+	 height:70vh;
+	 position:relative;
+ }
+ 
+ .products-cta span{
+	 position:absolute;
+	 bottom:80px;
+	 right:160px;
+ }
+/** products**/
+
+
+/** early start**/
+.download-btn{
+	background-color:var(--bgcolor);
+	
+}
+
+.earlystart-cta{
+	 background-color:var(--bgcolor);
+	 height:60vh;
+	 position:relative;
+ }
+ 
+.earlystart-cta .img{
+	 position:absolute;
+	 bottom:90px;
+	 right:160px;
+ }
+
+
+.earlystart-testimoney{
+	background-color:var(--bgcolor);
+}
+
+ 
+/** earlystart **/
+
+
+/** web hosting **/
+.services .tr-steps{
+	font-family:inter;
+	font-size:14px;
+	font-weight:500;
+}
+
+/** web hosting **/
+
+
+#hosting-cta p,li{
+	font-family:inter;
+	font-size:18px;
+	font-weight:400;
+	color:var(--bgcolor);
+	
+}
+
+#hosting-cta a{
+	background-color:var(--bgcolor);
+	color:#ffffff;
+}
+
+/** careers **/
+
+#career-vid .pulse{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: #F58634;
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 0%;
+}
+
+#career-vid .pulse a{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 18%;
+    z-index: 1;
+}
+
+#career-vid .pulse::before,
+#career-vid .pulse::after
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #F58634;
+    position: absolute;
+    border-radius: 50%;
+	
+    margin-left: -15%;
+     /* z-index: 1;  */
+}
+
+
+
+.career-join .intro{
+	font-family:inter;
+	font-size:24px;
+	font-weight:400;
+}
+
+.career-join .steps p{
+	font-family:futura;
+	font-size:14px;
+	font-weight:400;
+}
+
+.career-choice h3{
+	font-family:futura;
+	font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+}
+
+.career-choice p{
+	font-family: 'futura';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+}
+
+.career-testimoney{
+	background-color:rgba(246, 150, 5, 0.52);
+}
+
+.career-testimoney h2{
+	font-size:48px;
+	font-weight:700;
+}
+
+.career-testimoney button{
+	height:52px;
+	width:348px;
+	background-color:#D9D9D9;
+}
+
+.career-testimoney .our-team{
+	font-family:inter;
+	font-size:24px;
+	font-weight:400;
+	line-height:29.05px;
+	
+}
+ .career-testimoney.student-testimony{
+	 font-family:inter;
+	font-size:20px;
+	font-weight:400;
+	line-height:24.02px;
+ }
+/** careers **/
+
+/** about us page **/
+
+
+#about{
+    min-height:120vh;
+	background-image:url(../../images/bg.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	
+}
+
+#about h1{
+	font-family: futura;
+    font-style: Bold;
+    font-size: 50px;
+    line-height: 66.45px;
+
+}
+
+
+#about p{
+	font-family: futura;
+	font-weight:500;
+    font-size: 20px;
+    line-height: 26.56px;
+   
+}
+
+
+#about .joe {
+	
+	width: 427px;
+    height: 518px;
+	object-fit:contain;
+}
+
+
+.demograph{
+	margin-top:10%;
+}
+
+
+.demograph p{
+	font-size:80px;
+	font-weight:700;
+	line-height:106.32px;
+}
+
+
+.about-detail{
+	height:130vh;
+	margin-top:10%;
+	background-color:rgba(246, 150, 5, 0.52);
+	position:relative;
+}
+
+.about-detail img{
+	 position:absolute;
+	 top:65%;
+}
+
+
+.demograph span{
+	font-family: futura;
+	font-weight:500;
+    font-size: 20px;
+    line-height: 26.56px;
+}
+
+.team {
+	margin-top:30%;
+}
+
+
+.team .desc{
+	font-family:inter;
+	font-size:18px;
+	line-height:21.78px;
+	font-weight:400;
+}
+
+
+.team h4{
+	font-family:futura;
+	font-size:24px;
+	font-weight:700;
+	line-height:31.9px;
+	
+}
+
+.team span{
+	font-family:futura;
+	font-size:18px;
+	font-weight:500;
+	line-height:23.91px;
+}
+
+.team .team-member-info{
+	font-family:inter;
+	font-size:20px;
+	font-weight:400;
+	line-height:24.2px;
+	color:#F58634;
+}
+
+
+/** about us page ends **/
+
+/** category **/
+
+
+.category-banner{
+	height:460px;
+	background-color:var(--bgcolor);
+	margin-top:120px;
+}
+
+.category-banner img{
+	  width:90%;
+	  position:absolute;
+	  bottom:70px;
+	  left:45px;
+	  object-fit:cover;
+	
+}
+.category-item h3{
+	font-family:futura;
+	font-size:20px;
+	font-weight:700;
+}
+
+.category-item p{
+	font-family:inter;
+	font-size:14px;
+	font-weight:500;
+}
+
+.category-item-divider{
+	background-color:#D9D9D9;
+	width:90%;
+	text-align:center;
+}
+
+.category-item button{
+	font-family:futura;
+	font-size:14px;
+}
+
+
+/** category **/
+
+/** event log **/
+
+.event-log h1{
+	font-family: inter;
+    font-size: 24px;
+    line-height: 29px;
+	
+}
+
+.event-log h3{
+	color:#F58634;
+	font-family: futura;
+    font-size: 20px;
+    font-weight: bold;
+	
+}
+
+.event-log p{
+	font-family: inter;
+    font-size: 14px;
+    line-height:17px;
+	
+}
+/** event log **/
+
+
+/** event **/
+
+.search input {
+	width:80%;
+	border-radius:10px;
+	background-color:rgba(246, 150, 5, 0.52);
+}
+
+.search p{
+	font-family:inter;
+	font-size:24px;
+	line-height:29px;
+}
+
+/** event **/
+
+/** footer**/
+
+.footer-links h3{
+	font-family:inter;
+	font-size:24px;
+	line-height:20px;
+	font-weight:bold;
+}
+
+.footer-links ul li a{
+	font-family:inter;
+	font-size:14px;
+	line-height:17px;
+	
+}
+/** footer **/
+/** media queries **/
+
+@media only screen and (max-width: 480px)  {
+	
+h2 {
+	font-family:;
+	font-size: 16px;
+	font-weight:700;
+	line-height:18px;
+	
+}
+
+h4  {
+	font-family:futura;
+	font-size: 35px;
+	line-height:31.9px;
+}
+
+
+
+#hero{
+	min-height:28vh;
+	background-color:#F58634;
+}
+
+#hero h1{
+	font-size:16px;
+	font-weight:800;
+	line-height:22px;
+	color:#ffffff;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#hero p{
+font-family: 'Futura';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+color: #000000;
+}
+
+
+#hero img{
+	height:240px;
+	
+	
+	object-fit:cover;
+}
+
+#hero a{
+	font-size:10px;
+}
+
+
+
+
+.why_us p, .get_started p {
+	font-family:;
+	font-size: 12px;
+	font-weight:500;
+	text-align:center;
+}
+
+.why_us_tab ul .nav-link{
+	font-size:12px;
+	background-color:#F58634;
+	color: white;
+	}
+
+.tab-content h3 {
+	font-family:futura;
+	font-size:16px;
+	text-align:center;
+}
+
+.tab-content p{
+	font-size:12px;
+	text-align:center;
+	font-weight:500;
+}
+.get_started .tr-steps {
+	font-family:futura;
+	font-size:14px;
+	text-align:center;
+	font-weight:bold;
+}
+
+.pulse{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: #F58634;
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 40%;
+}
+
+.pulse a{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 18%;
+    z-index: 1;
+}
+
+.pulse::before,
+.pulse::after
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #F58634;
+    position: absolute;
+    border-radius: 50%;
+	
+    margin-left: -15%;
+     /* z-index: 1;  */
+}
+
+.motivation .sw-steps{
+	 font-size:14px;
+	 font-weight:700;
+}
+
+.motivation-points{
+font-size:12px;
+font-weight:400;
+}
+	
+
+.news .title{
+	font-size:16px;
+	font-weight:700;
+	text-align:center;
+	
+}
+
+.news .desc {
+	text-align:center;
+	font-size:12px;
+}
+
+.news .blog-link {
+	font-size:20px;
+	font-weight:700;
+	line-height:20px;
+	text-decoration:none;
+}
+
+.news .blog-link:hover {
+	font-size:20px;
+	font-weight:700;
+	color:blue;
+	text-decoration:none;
+	
+}
+
+
+.inputs{position:relative;width:100%;height:50px}
+.inputs input{position:absolute;width:100%;height:100%; top:50;)}
+.inputs span{position:absolute;top:12px;right:15px;cursor:pointer;font-size:17px}
+.inputs input:focus{outline:none}
+	
+.newsletter .desc{
+	font-size:12px;
+}
+
+.newsletter img {
+	position:absolute;
+	top: 55%;
+	left:29%;
+	height:60%;
+	width:40%;
+
+}
+
+ footer{
+		margin-top:;
+	}
+
+}

@@ -1,0 +1,12 @@
+
+.testimonial-item.equal-height.style-6 {
+    background-color: #eee;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+
+.et_right_sidebar #main-content .container:before{
+    display: none;
+}
